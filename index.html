@@ -8,6 +8,10 @@
     <link rel="bookmark" href="img/favicon.ico">
     <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
     <title>MoKit</title>
 </head>
 
@@ -21,11 +25,11 @@
             <p>MoKit</p>
             <p>Common tools using daily</p>
             <img src="img/logo.png">
-            <a class="nav-link" href="#设计相关">设计相关</a>
-            <a class="nav-link" href="#">开发者</a>
-            <a class="nav-link" href="#">白帽子黑客</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#设计相关" >设计相关</a>
+            <a class="nav-link" href="#开发者">开发者</a>
+            <a class="nav-link" href="#白帽子黑客">白帽子黑客</a>
+            <a class="nav-link" href="#学术相关">学术相关</a>
+            <a class="nav-link" href="#文档模板">文档模板</a>
         </div>
         <!--空的 flex 成员-->
         <div id="temp">
@@ -35,10 +39,10 @@
             <div class="contact">
                 <img src="img/profile.png">
                 <a href="https://marlous.github.io/home/" target="_blank" data-toggle="tooltip" data-placement="top"
-                    title="Marlous' Home">&nbsp;&nbsp;Home Page</a>
+                    title="Marlous' Home">&nbsp;&copy;&nbsp;Marlous</a>
             </div>
             <div class="copyright">
-                <p>&nbsp;&nbsp;&copy;&nbsp;Marlous</p>
+                <p>Powered by Marlous</p>
             </div>
         </div>
     </div>
@@ -57,7 +61,7 @@
                             onclick="baidu()">百度</span><span onclick="zhihu()">知乎</span>
                     </div>
                     <div id="search-bar" class="d-flex flex-row flex-nowrap">
-                        <input name="search-text" onkeyup="eKeyup(event)" type="text" placeholder="Search"
+                        <input name="search-text" onkeyup="eKeyup(event)" type="text" placeholder="请输入搜索内容..."
                             aria-label="Search">
                         <a id="go" onclick="go()" href="#" target="_blank"><span>Go</span></a>
                     </div>
@@ -68,158 +72,15 @@
 
         <!--整个页面右边主体下面部分-->
         <div id="body-right-bottom">
-            <div class="container-fluid h-100 mx-auto p-3 d-flex flex-column">
+            <div id="body-right-bottom-container" class="container-fluid h-100 mx-auto p-3 d-flex flex-column">
 
-                <!--第一个大的版面。在其中放一个个 item-->
-                <div class="board d-flex flex-column p-3">
-                    <div class="board-title"><a name="设计相关">🌻 设计相关</a></div>
-                    <div class="board-content d-flex flex-row flex-wrap">
-
-                        <!--每个 item-->
-                        <a class="item d-flex flex-column" href="#">
-                            <div class="intro d-flex flex-row">
-                                <img src="#">
-                                <p>标题</p>
-                            </div>
-                            <p class="des">“ 一些描述 ”</p>
-                        </a>
-                        <!--item 结束-->
-                        <a class="item d-flex flex-column" href="#">
-                            <div class="intro d-flex flex-row">
-                                <img src="#">
-                                <p>标题</p>
-                            </div>
-                            <p class="des">“ 一些描述 ”</p>
-                        </a>
-                        <a class="item d-flex flex-column" href="#">
-                            <div class="intro d-flex flex-row">
-                                <img src="#">
-                                <p>标题</p>
-                            </div>
-                            <p class="des">“ 一些描述 ”</p>
-                        </a>
-                        <a class="item d-flex flex-column" href="#">
-                            <div class="intro d-flex flex-row">
-                                <img src="#">
-                                <p>标题</p>
-                            </div>
-                            <p class="des">“ 一些描述 ”</p>
-                        </a>
-                        <a class="item d-flex flex-column" href="#">
-                            <div class="intro d-flex flex-row">
-                                <img src="#">
-                                <p>标题</p>
-                            </div>
-                            <p class="des">“ 一些描述 ”</p>
-                        </a>
-                        <a class="item d-flex flex-column" href="#">
-                            <div class="intro d-flex flex-row">
-                                <img src="#">
-                                <p>标题</p>
-                            </div>
-                            <p class="des">“ 一些描述 ”</p>
-                        </a>
-                        <a class="item d-flex flex-column" href="#">
-                            <div class="intro d-flex flex-row">
-                                <img src="#">
-                                <p>标题</p>
-                            </div>
-                            <p class="des">“ 一些描述 ”</p>
-                        </a>
-                        <a class="item d-flex flex-column" href="#">
-                            <div class="intro d-flex flex-row">
-                                <img src="#">
-                                <p>标题</p>
-                            </div>
-                            <p class="des">“ 一些描述 ”</p>
-                        </a>
-
-                    </div>
-                    <hr>
-                </div>
-                <!--第一个大的版面结束-->
-
-                <!--第二个大的版面。在其中放一个个 item-->
-                <div class="board d-flex flex-column p-3">
-                    <div class="board-title">🌻 设计相关</div>
-                    <div class="board-content d-flex flex-row flex-wrap">
-
-                        <!--每个 item-->
-                        <a class="item d-flex flex-column" href="#">
-                            <div class="intro d-flex flex-row">
-                                <img src="#">
-                                <p>标题</p>
-                            </div>
-                            <p class="des">“ 一些描述 ”</p>
-                        </a>
-                        <!--item 结束-->
-                        <a class="item d-flex flex-column" href="#">
-                            <div class="intro d-flex flex-row">
-                                <img src="#">
-                                <p>标题</p>
-                            </div>
-                            <p class="des">“ 一些描述 ”</p>
-                        </a>
-                        <a class="item d-flex flex-column" href="#">
-                            <div class="intro d-flex flex-row">
-                                <img src="#">
-                                <p>标题</p>
-                            </div>
-                            <p class="des">“ 一些描述 ”</p>
-                        </a>
-                        <a class="item d-flex flex-column" href="#">
-                            <div class="intro d-flex flex-row">
-                                <img src="#">
-                                <p>标题</p>
-                            </div>
-                            <p class="des">“ 一些描述 ”</p>
-                        </a>
-
-                    </div>
-                    <hr>
-                </div>
-                <!--第二个大的版面结束-->
-
-                <!--第三个大的版面。在其中放一个个 item-->
-                <div class="board d-flex flex-column p-3">
-                    <div class="board-title">🌻 设计相关</div>
-                    <div class="board-content d-flex flex-row flex-wrap">
-
-                        <!--每个 item-->
-                        <a class="item d-flex flex-column" href="#">
-                            <div class="intro d-flex flex-row">
-                                <img src="#">
-                                <p>标题</p>
-                            </div>
-                            <p class="des">“ 一些描述 ”</p>
-                        </a>
-                        <!--item 结束-->
-                        <a class="item d-flex flex-column" href="#">
-                            <div class="intro d-flex flex-row">
-                                <img src="#">
-                                <p>标题</p>
-                            </div>
-                            <p class="des">“ 一些描述 ”</p>
-                        </a>
-                        <a class="item d-flex flex-column" href="#">
-                            <div class="intro d-flex flex-row">
-                                <img src="#">
-                                <p>标题</p>
-                            </div>
-                            <p class="des">“ 一些描述 ”</p>
-                        </a>
-                        <a class="item d-flex flex-column" href="#">
-                            <div class="intro d-flex flex-row">
-                                <img src="#">
-                                <p>标题</p>
-                            </div>
-                            <p class="des">“ 一些描述 ”</p>
-                        </a>
-
-                    </div>
-                    <hr>
-                </div>
-                <!--第三个大的版面结束-->
+                <script>
+                    generateNav("config/设计相关.json", "设计相关");
+                    generateNav("config/design.json", "开发者");
+                    generateNav("config/design.json", "白帽子黑客");
+                    generateNav("config/design.json", "学术相关");
+                    generateNav("config/design.json", "文档模板");
+                </script>
 
             </div>
         </div>
@@ -228,10 +89,6 @@
 
 
     <!-- Scripts -->
-    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="js/config.js"></script>
-    <script src="js/main.js"></script>
     <script>
         autoClickSearchTab();
     </script>
