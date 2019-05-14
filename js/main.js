@@ -37,6 +37,30 @@ function zhihu() {
     $("#search-tab span:nth-child(6)").addClass("clicked");
 }
 
+function wiki() {
+    link = "https://zh.wikipedia.org/w/index.php?search=";
+    $("#search-tab span").removeClass("clicked");
+    $("#search-tab span:nth-child(7)").addClass("clicked");
+}
+
+function stackoverflow() {
+    link = "https://stackoverflow.com/search?q=";
+    $("#search-tab span").removeClass("clicked");
+    $("#search-tab span:nth-child(8)").addClass("clicked");
+}
+
+function segmentfault() {
+    link = "https://segmentfault.com/search?q=";
+    $("#search-tab span").removeClass("clicked");
+    $("#search-tab span:nth-child(9)").addClass("clicked");
+}
+
+function paperclip() {
+    link = "https://www.ipaperclip.net/doku.php?do=search&id=start&q=";
+    $("#search-tab span").removeClass("clicked");
+    $("#search-tab span:nth-child(10)").addClass("clicked");
+}
+
 
 /* 搜索键。拼出要跳转的链接。link 变量加上搜索框内容拼成一个链接 */
 function go() {
@@ -66,7 +90,7 @@ function autoClickSearchTab() {
 /* 点击导航栏，会跳转到对应的锚点，但是会被固定的搜索栏遮住，
 此函数会自动向下滑一段距离，修正锚点便偏移问题。 */
 function autoScroll() {
-
+    // 暂未完成
 }
 
 
@@ -91,7 +115,7 @@ function generateNav(nav_config_path, nav_name) {
             var title_temp = item.title;
             var web_temp = item.web;
             var description_temp = item.description;
-            var item_box = "<a class=\"item d-flex flex-column\" href=\"" + web_temp + "\" target=\"_blank\"><div class=\"intro d-flex flex-row\"><img src=\"https://ico.kucat.cn/get.php?url=" + web_temp + "\" onerror=\"{this.src=\'img/clover.png\'}\"><p>" + title_temp + "</p></div><p class=\"des\">“ " + description_temp + " ”</p></a>";
+            var item_box = "<a class=\"item d-flex flex-column\" href=\"" + web_temp + "\" target=\"_blank\"><div class=\"intro d-flex flex-row\"><img src=\"https://ico.kucat.cn/get.php?url=" + web_temp + "\" onerror=\"{this.src=\'img/icon_error.png\'}\"><p>" + title_temp + "</p></div><p class=\"des\">“ " + description_temp + " ”</p></a>";
             $("#" + nav_name + " .board-content").append(item_box);
         })
 
