@@ -24,6 +24,11 @@
             "title": "Bootstrap 4 中文文档",
             "web": "http://bs4.ntp.org.cn/pages/components.html",
             "description": "Bootstrap 4 中文文档。"
+        },
+        {
+            "title": "Kali Linux Tools 中文說明書",
+            "web": "https://www.shentoushi.top/kali-tools/tools_zh.html",
+            "description": "Kali Linux Tools 中文說明書。"
         }
     ]
 }
